@@ -1,0 +1,156 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4007545418520277570
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 285278079579059586}
+  - component: {fileID: 1838915359718481715}
+  - component: {fileID: 2863054959255300926}
+  m_Layer: 0
+  m_Name: Grid
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &285278079579059586
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4007545418520277570}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1838915359718481715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4007545418520277570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c583ff7aa2ce0c48a63efc4af9be46b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  creatureprefab: {fileID: 5503720791906615122, guid: 8b28691005fb09d41bd7cd31999fe5fd, type: 3}
+  treePrefabs:
+  - {fileID: 446390901041589092, guid: b789937b3209bf4459689cc8be1da3fe, type: 3}
+  - {fileID: 8954509413914473785, guid: e3879cb5764dd234cbeb3dc25d5ae18e, type: 3}
+  - {fileID: 4994279302697919404, guid: 4db53bc4036b4e14c81972c60858344f, type: 3}
+  terrainMaterial: {fileID: 2100000, guid: 356f3873cb92ba543ac289b56d429d30, type: 2}
+  edgeMaterial: {fileID: 2100000, guid: cb8a84ec16ca42f4f9a075daa1567369, type: 2}
+  creaturenum: 50
+  waterlevel: 0.2
+  scale: 0.1
+  treeNoiseScale: 0.75
+  treeDensity: 0.25
+  treeNum: 150
+  currentTreeNum: 0
+  creatureDensity: 0.2
+  size: 100
+  bigTreeFoodValue: 40
+  bigTreeWaterValue: 20
+  medTreeFoodValue: 20
+  medTreeWaterValue: 10
+  smallTreeFoodValue: 10
+  smallTreeWaterValue: 5
+--- !u!114 &2863054959255300926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4007545418520277570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78396926cbbfc4ac3b48fc5fc34a87d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  data:
+    dataString: UEsDBBQAAAgIAAAAIez3tSXaUgIAAA8FAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVMmS2jAQ/RVK50zKbGHILTEMkwMDNSQ1F1+E1MYqZMmlhbX490iywB7PCfPe6+7Xi31FTOgKiJFqoRhdSgroZw/5Z/St15CvcMI7KTbsAnfNB6Om8CIcNO/YMOnwvg/TsgSjGPkldtyLEwdawXKpyjndQSq10Q7OMdfgKCWNjxYOuvbQKQac4+/F//Zu7omAMKAa1bgrG9c6KwjHZQXU+23kk3GUT8ZBJlwnUZF89xyRnDMdjSBzrkKjKa60dW04AWXYNRYs+D4LYLvCuD+DdvAqzzWY6Erh84wpN586K/ot66GVWO9rZwfMLTxarFMuv7BP/UDnSpav96r9xFcwBSP7d3wmWJvWTNvw7LNtK46Y7/GWw0cB4k0ulLSCOtIo60OthsGslerRWVoA2Te62msHtNXXLfabLd5C76eUs3Ib5j6qgQ2XYdpTHwPKbeaPMxyuQsdMDvUm/mn4i3ft84nEC1PaOCoWFN7dVlrlpWgeZuabsSaVSkCAo+cKBObmvHZpTHeBHa5VtsO8YP+ixOKRu99/JyTAjT5JOtRaHh/L0oU8LkEXK2s4E9CY9sSbm1Mqhajvqz2Te9jGqhyTVtjOMvr5tNBwkgxHo+F0Qgc/Jsl2+pQMYTAaDEh/SPLp8+QZhdtjwvWJ+bo2Gsfjtiaa5MLd2f370VsoXIVbpwofF+xSytbImcjlhigAsaozPIyDckXcW0nnlLkBbcAYJsK+0TVDXJI90OyRKAudzk9G4azJkqGKHaTxSIbS8NXIkIcfp7xWcGBw9MXvyW7o9h9QSwMEFAAACAgAAAAh7LkERBttAAAAeAAAAAkAJABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQGrVipLLSrOzM9TslIw0TPSMzTXUVBKL0osyCgGihiCOKWZKSB2tJKxuYGxiYmxpXmKkZm5QZKlroFxqpGJkVGyoXFymqWFuYVSLFB9SWVBql9ibipET0BiSUZaZl5KZl66nntRZoo7yGil2FoAUEsBAi0AFAAACAgAAAAh7Pe1JdpSAgAADwUAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAgAAAAh7LkERBttAAAAeAAAAAkAJAAAAAAAAAAAAAAAnwIAAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLBQYAAAAAAgACALgAAABXAwAAAAA=
+    upgradeData: 
+    file_cachedStartup: {fileID: 0}
+    data_cachedStartup: 
+    cacheStartup: 0
+  showNavGraphs: 0
+  showUnwalkableNodes: 1
+  debugMode: 0
+  debugFloor: 0
+  debugRoof: 1
+  manualDebugFloorRoof: 0
+  showSearchTree: 0
+  unwalkableNodeDebugSize: 0.3
+  logPathResults: 1
+  maxNearestNodeDistance: 100
+  scanOnStartup: 1
+  fullGetNearestSearch: 0
+  prioritizeGraphs: 0
+  prioritizeGraphsLimit: 1
+  colorSettings:
+    _SolidColor: {r: 0.11764706, g: 0.4, b: 0.7882353, a: 0.9}
+    _UnwalkableNode: {r: 1, g: 0, b: 0, a: 0.5}
+    _BoundsHandles: {r: 0.29, g: 0.454, b: 0.741, a: 0.9}
+    _ConnectionLowLerp: {r: 0, g: 1, b: 0, a: 0.5}
+    _ConnectionHighLerp: {r: 1, g: 0, b: 0, a: 0.5}
+    _MeshEdgeColor: {r: 0, g: 0, b: 0, a: 0.5}
+    _AreaColors:
+    - {r: 0, g: 0, b: 0, a: 0}
+  tagNames:
+  - Basic Ground
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 17
+  - 18
+  - 19
+  - 20
+  - 21
+  - 22
+  - 23
+  - 24
+  - 25
+  - 26
+  - 27
+  - 28
+  - 29
+  - 30
+  - 31
+  heuristic: 2
+  heuristicScale: 1
+  threadCount: 1
+  maxFrameTime: 10
+  batchGraphUpdates: 0
+  graphUpdateBatchingInterval: 0.2
+  euclideanEmbedding:
+    mode: 0
+    seed: 0
+    pivotPointRoot: {fileID: 0}
+    spreadOutCount: 1
+  showGraphs: 1
